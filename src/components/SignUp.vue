@@ -65,6 +65,12 @@ export default{
                 }
             }
         }
+    },
+    mounted(){
+        let user= localStorage.getItem("token");
+        if (user){
+            this.$router.push({name:'Home'})
+        }
     }
 }
 </script>

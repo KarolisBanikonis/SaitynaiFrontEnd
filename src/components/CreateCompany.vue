@@ -51,7 +51,7 @@ export default{
     mounted(){
         let role = localStorage.getItem("userRole");
         if(role != "Admin"){
-            this.$router.push({name: 'Companies'});
+            this.$router.push({name: 'Home'});
         }
     },
     components:{
