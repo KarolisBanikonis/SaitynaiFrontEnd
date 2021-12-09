@@ -2,7 +2,7 @@
 <Header />
     <h1>Filmo {{this.movie}} komentarų sąrašas</h1>
     <div class="register">
-        <button v-if="showIfUser()" v-on:click="createComment()">Sukurkite komentarą</button>
+        <button class="iconBtn" v-if="showIfUser()" v-on:click="createComment()">Sukurkite komentarą</button>
     </div>
     <br>
     <div class="register">

@@ -37,11 +37,17 @@ th, td {
     width: 75px
 }
 
-.icon{
-    background: url("https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-add-basic-ui-elements-flatart-icons-outline-flatarticons.png") no-repeat;
-    float: left;
-    width: 20px;
-    height: 20px;
+.iconBtn{
+  background-image: url("./add-plus.svg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-y: center;
+
+}
+
+.btnText{
+  margin-left: 23px;
+  font-family: 'Shippori Antique', sans-serif;
 }
 
 .register input{
@@ -74,7 +80,8 @@ th, td {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #803e0b;;
+  background-image: radial-gradient(#803e0b, #af6226);
+  /*background-color: #803e0b;*/
   color: white;
   text-align: center;
   font-family: 'Bungee Inline', cursive;
@@ -84,6 +91,7 @@ th, td {
 }
 .nav{
     background-color: #803e0b;
+    /*background-image: radial-gradient(#803e0b, #af6226);*/
     overflow: hidden;
 }
 .nav a{

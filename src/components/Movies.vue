@@ -2,7 +2,9 @@
 <Header />
     <h1>Kompanijos {{this.company}} filmų sąrašas</h1>
     <div class="register">
-        <button v-if="showIfAdmin()" v-on:click="createMovie()">Sukurkite filmą</button>
+        <button class="iconBtn" v-if="showIfAdmin()" v-on:click="createMovie()">
+            <p class="btnText">Sukurkite filmą</p>
+        </button>
     </div>
     <br>
     <div class="register">

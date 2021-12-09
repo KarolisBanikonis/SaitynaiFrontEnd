@@ -3,8 +3,7 @@
     
     <h1>Filmus kuriančių kompanijų sąrašas</h1>
     <div class="register">
-        <button v-if="showIfAdmin()" v-on:click="createCompany()">
-            <img class="img" src="../assets/add.svg">
+        <button class="iconBtn" v-if="showIfAdmin()" v-on:click="createCompany()">
             Sukurkite kompaniją
             </button>
     </div>
