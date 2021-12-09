@@ -85,7 +85,8 @@ export default{
             let chosenCompany = localStorage.getItem("chosenCompany");
             let companyId = JSON.parse(chosenCompany).id;
             await axios.delete("https://infomoviesapi.azurewebsites.net/api/companies/" + companyId + "/movies/" + id, { headers: {"Authorization" : `Bearer ${this.token}`} });
-            location.reload();
+            //location.reload();
+            this.$router.push({name: 'Home'});
         },
         async getComments(id){
             let chosenCompany = localStorage.getItem("chosenCompany");

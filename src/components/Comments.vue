@@ -85,7 +85,8 @@ export default{
             let chosenMovie = localStorage.getItem("chosenMovie");
             let movieId = JSON.parse(chosenMovie).id;
             await axios.delete("https://infomoviesapi.azurewebsites.net/api/companies/" + companyId + "/movies/" + movieId + "/comments/" + id, { headers: {"Authorization" : `Bearer ${this.token}`} });
-            location.reload();
+            //location.reload();
+            this.$router.push({name: 'Home'});
         }
     },
 

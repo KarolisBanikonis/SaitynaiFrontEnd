@@ -72,7 +72,7 @@ export default{
         },
         async deleteCompany(id){
             await axios.delete("https://infomoviesapi.azurewebsites.net/api/companies/"+id, { headers: {"Authorization" : `Bearer ${this.token}`} });
-            location.reload();
+            this.$router.push({name: 'Home'});
         },
         getCompany(company){
             this.company = company;

@@ -80,12 +80,13 @@ export default {
         },
         Logout(){
             localStorage.clear();
-            if(this.$route.name == "Home"){
+            this.$router.push({name:'Home'});
+            /*if(this.$route.name == "Home"){
                 location.reload();
             }
             else{
                 this.$router.push({name:'Home'});
-            }
+            }*/
         },
         loggedIn(){
             if (localStorage.getItem("token")){
